@@ -1,3 +1,5 @@
+using GameTOP.Interface;
+
 namespace GameTOP.lib
 {
     public class Jogador2 : IJogador

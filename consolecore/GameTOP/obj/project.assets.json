@@ -207,6 +207,29 @@
         "build": {
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
+      },
+      "GameTOP.Interface/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/GameTOP.Interface.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/GameTOP.Interface.dll": {}
+        }
+      },
+      "GameTOP.Lib/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "GameTOP.Interface": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/GameTOP.Lib.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/GameTOP.Lib.dll": {}
+        }
       }
     }
   },
@@ -680,10 +703,22 @@
         "netstandard.library.2.0.3.nupkg.sha512",
         "netstandard.library.nuspec"
       ]
+    },
+    "GameTOP.Interface/1.0.0": {
+      "type": "project",
+      "path": "../GameTOP.Interface/GameTOP.Interface.csproj",
+      "msbuildProject": "../GameTOP.Interface/GameTOP.Interface.csproj"
+    },
+    "GameTOP.Lib/1.0.0": {
+      "type": "project",
+      "path": "../GameTOP.LIB/GameTOP.Lib.csproj",
+      "msbuildProject": "../GameTOP.LIB/GameTOP.Lib.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.1": [
+      "GameTOP.Interface >= 1.0.0",
+      "GameTOP.Lib >= 1.0.0",
       "Microsoft.NETCore.App >= 2.1.0"
     ]
   },
@@ -716,7 +751,14 @@
       },
       "frameworks": {
         "netcoreapp2.1": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Nascimento\\Documents\\estudos\\dotnetcore\\consolecore\\GameTOP.Interface\\GameTOP.Interface.csproj": {
+              "projectPath": "C:\\Users\\Nascimento\\Documents\\estudos\\dotnetcore\\consolecore\\GameTOP.Interface\\GameTOP.Interface.csproj"
+            },
+            "C:\\Users\\Nascimento\\Documents\\estudos\\dotnetcore\\consolecore\\GameTOP.LIB\\GameTOP.Lib.csproj": {
+              "projectPath": "C:\\Users\\Nascimento\\Documents\\estudos\\dotnetcore\\consolecore\\GameTOP.LIB\\GameTOP.Lib.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -729,16 +771,23 @@
       "netcoreapp2.1": {
         "dependencies": {
           "Microsoft.NETCore.App": {
+            "suppressParent": "All",
             "target": "Package",
             "version": "[2.1.0, )",
             "autoReferenced": true
           }
         },
         "imports": [
-          "net461"
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
         ],
         "assetTargetFallback": true,
-        "warn": true
+        "warn": true,
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
       }
     }
   }
