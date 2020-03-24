@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Nascimento\\Documents\\estudos\\dotnetcore\\ProAgil.WebAPI\\ProAgil.WebAPI.csproj": {}
+    "C:\\Users\\Nascimento\\Documents\\estudos\\dotnetcore\\ProAgil.WebApi\\ProAgil.WebAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Nascimento\\Documents\\estudos\\dotnetcore\\ProAgil.WebAPI\\ProAgil.WebAPI.csproj": {
+    "C:\\Users\\Nascimento\\Documents\\estudos\\dotnetcore\\ProAgil.WebApi\\ProAgil.WebAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Nascimento\\Documents\\estudos\\dotnetcore\\ProAgil.WebAPI\\ProAgil.WebAPI.csproj",
+        "projectUniqueName": "C:\\Users\\Nascimento\\Documents\\estudos\\dotnetcore\\ProAgil.WebApi\\ProAgil.WebAPI.csproj",
         "projectName": "ProAgil.WebAPI",
-        "projectPath": "C:\\Users\\Nascimento\\Documents\\estudos\\dotnetcore\\ProAgil.WebAPI\\ProAgil.WebAPI.csproj",
+        "projectPath": "C:\\Users\\Nascimento\\Documents\\estudos\\dotnetcore\\ProAgil.WebApi\\ProAgil.WebAPI.csproj",
         "packagesPath": "C:\\Users\\Nascimento\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Nascimento\\Documents\\estudos\\dotnetcore\\ProAgil.WebAPI\\obj\\",
+        "outputPath": "C:\\Users\\Nascimento\\Documents\\estudos\\dotnetcore\\ProAgil.WebApi\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
