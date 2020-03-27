@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace ProAgil.Repository
 {
-    class ProAgilRepository : IProAgilRepository
+    public class ProAgilRepository : IProAgilRepository
     {
         private readonly ProAgilContext _context;
         public ProAgilRepository(ProAgilContext context)

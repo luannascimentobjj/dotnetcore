@@ -1,61 +1,146 @@
+﻿using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
+using ProAgil.Domain;
+using ProAgil.Repository;
 using System;
 using System.Collections.Generic;
-using System.Linq;
+using System.Text;
 using System.Threading.Tasks;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Logging;
-using ProAgil.Repository;
-using ProAgil.Domain;
 
 namespace ProAgil.WebAPI.Controllers
 {
-    [ApiController]
     [Route("api/[controller]")]
+    [ApiController]
     public class EventoController : ControllerBase
     {
-        private readonly ILogger<EventoController> _logger;
-        private readonly ProAgilContext _context;
-
-        public EventoController(ILogger<EventoController> logger, ProAgilContext context)
+        private readonly IProAgilRepository _proAgilRepository;
+        public EventoController(IProAgilRepository proAgilRepository)
         {
-            _logger = logger;
-            _context =  context;
+            _proAgilRepository = proAgilRepository;
 
         }
+
 
         [HttpGet]
         public async Task<IActionResult> Get()
         {
             try
             {
-                var results = await _context.Eventos.ToListAsync();   
+                var results = await _proAgilRepository.GetAllEventosAsync(true);
                 return Ok(results);
             }
             catch (System.Exception)
             {
-                
-               return this.StatusCode(StatusCodes.Status500InternalServerError, "Falha no banco de dados");
+
+                return this.StatusCode(StatusCodes.Status500InternalServerError, "Falha no banco de dados");
             }
-          
+
         }
 
-        
-        [HttpGet("{id}")]
-        public async Task<IActionResult> Get(int id)
+
+
+        [HttpGet("{EventoId}")]
+        public async Task<IActionResult> Get(int EventoId)
         {
             try
             {
-                var results = await _context.Eventos.FirstOrDefaultAsync(x => x.Id == id);    
+                var results = await _proAgilRepository.GetEventoAsyncById(EventoId, true);
                 return Ok(results);
             }
-              catch (System.Exception)
+            catch (System.Exception)
             {
+
                 return this.StatusCode(StatusCodes.Status500InternalServerError, "Falha no banco de dados");
             }
-            
+
+        }
+        [HttpGet("getByTema/{tema}")]
+        public async Task<IActionResult> Get(string Tema)
+        {
+            try
+            {
+                var results = await _proAgilRepository.GetAllEventosAsyncByTema(Tema, true);
+                return Ok(results);
+            }
+            catch (System.Exception)
+            {
+
+                return this.StatusCode(StatusCodes.Status500InternalServerError, "Falha no banco de dados");
+            }
+
         }
 
+        [HttpPost]
+        public async Task<IActionResult> Post(Evento evento)
+        {
+            try
+            {
+                _proAgilRepository.Add(evento);
+                if (await _proAgilRepository.SaveChangesAsync())
+                {
+                    return Created($"/api/evento/{evento.Id}", evento);
+                }
+                
+            }
+            catch (System.Exception)
+            {
+
+                return this.StatusCode(StatusCodes.Status500InternalServerError, "Falha no banco de dados");
+            }
+            return BadRequest();
+
+        }
+
+        [HttpPut]
+        public async Task<IActionResult> Put(int EventoId, Evento eventoDomain)
+        {
+            try
+            {
+                var evento = await _proAgilRepository.GetEventoAsyncById(EventoId, false);
+                if (evento == null) return NotFound();
+
+                _proAgilRepository.Update(eventoDomain);
+
+                if (await _proAgilRepository.SaveChangesAsync())
+                {
+                    return Created($"/api/evento/{eventoDomain.Id}", eventoDomain);
+                }
+
+            }
+            catch (System.Exception)
+            {
+
+                return this.StatusCode(StatusCodes.Status500InternalServerError, "Falha no banco de dados");
+            }
+            return BadRequest();
+
+        }
+
+
+        [HttpDelete]
+        public async Task<IActionResult> Delete(int EventoId)
+        {
+            try
+            {
+                var evento = await _proAgilRepository.GetEventoAsyncById(EventoId, false);
+                if (evento == null) return NotFound();
+
+                _proAgilRepository.Delete(evento);
+
+                if (await _proAgilRepository.SaveChangesAsync())
+                {
+                    return Ok();
+                }
+
+            }
+            catch (System.Exception)
+            {
+
+                return this.StatusCode(StatusCodes.Status500InternalServerError, "Falha no banco de dados");
+            }
+            return BadRequest();
+
+        }
     }
 }
