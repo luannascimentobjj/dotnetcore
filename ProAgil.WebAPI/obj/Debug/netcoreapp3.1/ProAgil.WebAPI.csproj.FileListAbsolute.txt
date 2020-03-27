@@ -50,12 +50,14 @@ C:\Users\Nascimento\Documents\estudos\dotnetcore\ProAgil.WebAPI\bin\Debug\netcor
 C:\Users\Nascimento\Documents\estudos\dotnetcore\ProAgil.WebAPI\bin\Debug\netcoreapp3.1\ProAgil.Domain.pdb
 C:\Users\Nascimento\Documents\estudos\dotnetcore\ProAgil.WebAPI\bin\Debug\netcoreapp3.1\ProAgil.Repository.pdb
 C:\Users\Nascimento\Documents\estudos\dotnetcore\ProAgil.WebAPI\obj\Debug\netcoreapp3.1\ProAgil.WebAPI.csprojAssemblyReference.cache
-C:\Users\Nascimento\Documents\estudos\dotnetcore\ProAgil.WebAPI\obj\Debug\netcoreapp3.1\staticwebassets\ProAgil.WebAPI.StaticWebAssets.Manifest.cache
-C:\Users\Nascimento\Documents\estudos\dotnetcore\ProAgil.WebAPI\obj\Debug\netcoreapp3.1\staticwebassets\ProAgil.WebAPI.StaticWebAssets.xml
+C:\Users\Nascimento\Documents\estudos\dotnetcore\ProAgil.WebAPI\obj\Debug\netcoreapp3.1\ProAgil.WebAPI.csproj.CoreCompileInputs.cache
 C:\Users\Nascimento\Documents\estudos\dotnetcore\ProAgil.WebAPI\obj\Debug\netcoreapp3.1\ProAgil.WebAPI.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\Nascimento\Documents\estudos\dotnetcore\ProAgil.WebAPI\obj\Debug\netcoreapp3.1\ProAgil.WebAPI.AssemblyInfoInputs.cache
 C:\Users\Nascimento\Documents\estudos\dotnetcore\ProAgil.WebAPI\obj\Debug\netcoreapp3.1\ProAgil.WebAPI.AssemblyInfo.cs
 C:\Users\Nascimento\Documents\estudos\dotnetcore\ProAgil.WebAPI\obj\Debug\netcoreapp3.1\ProAgil.WebAPI.RazorTargetAssemblyInfo.cache
 C:\Users\Nascimento\Documents\estudos\dotnetcore\ProAgil.WebAPI\obj\Debug\netcoreapp3.1\ProAgil.WebAPI.csproj.CopyComplete
+C:\Users\Nascimento\Documents\estudos\dotnetcore\ProAgil.WebAPI\obj\Debug\netcoreapp3.1\staticwebassets\ProAgil.WebAPI.StaticWebAssets.Manifest.cache
+C:\Users\Nascimento\Documents\estudos\dotnetcore\ProAgil.WebAPI\obj\Debug\netcoreapp3.1\staticwebassets\ProAgil.WebAPI.StaticWebAssets.xml
 C:\Users\Nascimento\Documents\estudos\dotnetcore\ProAgil.WebAPI\obj\Debug\netcoreapp3.1\ProAgil.WebAPI.dll
 C:\Users\Nascimento\Documents\estudos\dotnetcore\ProAgil.WebAPI\obj\Debug\netcoreapp3.1\ProAgil.WebAPI.pdb
+C:\Users\Nascimento\Documents\estudos\dotnetcore\ProAgil.WebAPI\obj\Debug\netcoreapp3.1\ProAgil.WebAPI.genruntimeconfig.cache
