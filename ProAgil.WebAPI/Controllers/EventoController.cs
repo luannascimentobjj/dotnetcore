@@ -10,8 +10,8 @@ using System.Threading.Tasks;
 
 namespace ProAgil.WebAPI.Controllers
 {
-    [Route("api/[controller]")]
     [ApiController]
+    [Route("api/[controller]")]
     public class EventoController : ControllerBase
     {
         private readonly IProAgilRepository _proAgilRepository;

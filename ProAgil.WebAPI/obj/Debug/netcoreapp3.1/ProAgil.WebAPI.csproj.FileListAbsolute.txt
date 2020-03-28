@@ -7,6 +7,8 @@ C:\Users\Nascimento\Documents\estudos\dotnetcore\ProAgil.WebAPI\bin\Debug\netcor
 C:\Users\Nascimento\Documents\estudos\dotnetcore\ProAgil.WebAPI\bin\Debug\netcoreapp3.1\ProAgil.WebAPI.runtimeconfig.dev.json
 C:\Users\Nascimento\Documents\estudos\dotnetcore\ProAgil.WebAPI\bin\Debug\netcoreapp3.1\ProAgil.WebAPI.dll
 C:\Users\Nascimento\Documents\estudos\dotnetcore\ProAgil.WebAPI\bin\Debug\netcoreapp3.1\ProAgil.WebAPI.pdb
+C:\Users\Nascimento\Documents\estudos\dotnetcore\ProAgil.WebAPI\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\Nascimento\Documents\estudos\dotnetcore\ProAgil.WebAPI\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
 C:\Users\Nascimento\Documents\estudos\dotnetcore\ProAgil.WebAPI\bin\Debug\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Users\Nascimento\Documents\estudos\dotnetcore\ProAgil.WebAPI\bin\Debug\netcoreapp3.1\Microsoft.Bcl.HashCode.dll
 C:\Users\Nascimento\Documents\estudos\dotnetcore\ProAgil.WebAPI\bin\Debug\netcoreapp3.1\Microsoft.Data.Sqlite.dll
@@ -28,6 +30,8 @@ C:\Users\Nascimento\Documents\estudos\dotnetcore\ProAgil.WebAPI\bin\Debug\netcor
 C:\Users\Nascimento\Documents\estudos\dotnetcore\ProAgil.WebAPI\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
 C:\Users\Nascimento\Documents\estudos\dotnetcore\ProAgil.WebAPI\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.dll
 C:\Users\Nascimento\Documents\estudos\dotnetcore\ProAgil.WebAPI\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
+C:\Users\Nascimento\Documents\estudos\dotnetcore\ProAgil.WebAPI\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\Nascimento\Documents\estudos\dotnetcore\ProAgil.WebAPI\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll
 C:\Users\Nascimento\Documents\estudos\dotnetcore\ProAgil.WebAPI\bin\Debug\netcoreapp3.1\SQLitePCLRaw.batteries_v2.dll
 C:\Users\Nascimento\Documents\estudos\dotnetcore\ProAgil.WebAPI\bin\Debug\netcoreapp3.1\SQLitePCLRaw.nativelibrary.dll
 C:\Users\Nascimento\Documents\estudos\dotnetcore\ProAgil.WebAPI\bin\Debug\netcoreapp3.1\SQLitePCLRaw.core.dll
