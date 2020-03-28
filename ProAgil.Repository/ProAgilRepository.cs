@@ -14,6 +14,8 @@ namespace ProAgil.Repository
         public ProAgilRepository(ProAgilContext context)
         {
             _context = context;
+            //para dar untracking e não prender o bd com o ef
+            //_context.ChangeTracker.QueryTrackingBehavior = QueryTrackingBehavior.NoTracking;
         }
 
         public void Add<T>(T entity) where T : class
@@ -46,7 +48,8 @@ namespace ProAgil.Repository
                     .ThenInclude(p => p.Palestrante);
             }
 
-            query = query.OrderByDescending(c => c.DataEvento);
+            query = query.AsNoTracking()
+                         .OrderByDescending(c => c.DataEvento);
 
             return await query.ToArrayAsync();
         }

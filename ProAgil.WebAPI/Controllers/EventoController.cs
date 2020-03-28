@@ -34,8 +34,6 @@ namespace ProAgil.WebAPI.Controllers
 
         }
 
-
-
         [HttpGet("{EventoId}")]
         public async Task<IActionResult> Get(int EventoId)
         {
