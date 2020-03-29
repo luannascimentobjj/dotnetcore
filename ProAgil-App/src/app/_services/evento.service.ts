@@ -3,9 +3,7 @@ import { HttpClient } from '@Angular/common/http';
 import { Observable } from 'rxjs';
 import { Evento } from '../_models/Evento';
 
-@Injectable({
-  providedIn: 'root'
-})
+@Injectable()
 export class EventoService {
 
   baseURL = 'http://localhost:5000/api/evento';
